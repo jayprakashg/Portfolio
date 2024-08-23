@@ -27,7 +27,6 @@ function App() {
       <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />    
       <AboutBar/>
       <MiddleBar />
-  
     </div>
   );
 }

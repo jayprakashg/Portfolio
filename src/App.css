@@ -15,7 +15,7 @@
 
 [data-theme='dark'] {
   --background-color: #151b2d;
-  --background-primary-color: #161d32;
+  --background-primary-color: #0d1222;
   --secondary-color: #5c6274;
   --text-color: #e0e0e0;
   --dark-bg: #202940;
@@ -24,9 +24,10 @@
   --pupil-bg: #fff;
   --video-before-bg:#161b2de6;
   --menu-bg-color: #0014249c;
-  --svg-bg-green: url(src/assets/green.svg) no-repeat;
-  --svg-bg-red: url(src/assets/red.svg) no-repeat;
-  --svg-bg-yellow: url(src/assets/yellow.svg) no-repeat;
+  --svg-bg-green: url(src/assets/dark-green.svg) no-repeat;
+  --svg-bg-red: url(src/assets/dark-red.svg) no-repeat;
+  --svg-bg-yellow: url(src/assets/dark-yellow.svg) no-repeat;
+
 }
 
 [data-theme='light'] {

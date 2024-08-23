@@ -1,0 +1,16 @@
+<svg width="550" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="RadialGradient1">
+    <stop offset="0" style="stop-color: rgb(139 137 44);"></stop>
+    <stop offset="1" style="stop-color: rgb(22 27 45);stop-opacity:0"></stop>
+    </radialGradient>
+  </defs>
+  <rect 
+    x="10"
+    y="10"
+    rx="15"
+    ry="15"
+    width="500"
+    height="500"
+    fill="url(#RadialGradient1)" />
+</svg>
