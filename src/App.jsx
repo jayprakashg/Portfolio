@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import NavBar from './componet/NavBar/NavBar';
-import BannerBar from './componet/BannerBar/BannerBar';
 import MiddleBar from './componet/MiddleBar/MiddleBar';
-import CursorCircles from './componet/NavBar/CursorCircles/CursorCircles';
+import CursorCircles from './componet/CursorCircles/CursorCircles';
 import AboutBar from './componet/AboutBar/AboutBar';
 
 function App() {
@@ -25,10 +24,10 @@ function App() {
   return (
     <div className="App">
       <CursorCircles/>
-      <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-      <BannerBar />
-      <MiddleBar />
+      <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />    
       <AboutBar/>
+      <MiddleBar />
+  
     </div>
   );
 }

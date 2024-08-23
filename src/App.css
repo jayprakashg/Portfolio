@@ -6,8 +6,7 @@
   --dark-toggle-bg-color: #5b6274;
   --light-toggle-color: #fca51c;
   --dark-toggle-color: #263053;
-
-
+  
   --box-shadow-1: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   --box-shadow-2: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   --box-shadow-3: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -23,6 +22,11 @@
   --dark-light-bg: #00000021;
   --Navtext-color: #e0e0e0;
   --pupil-bg: #fff;
+  --video-before-bg:#161b2de6;
+  --menu-bg-color: #0014249c;
+  --svg-bg-green: url(src/assets/green.svg) no-repeat;
+  --svg-bg-red: url(src/assets/red.svg) no-repeat;
+  --svg-bg-yellow: url(src/assets/yellow.svg) no-repeat;
 }
 
 [data-theme='light'] {
@@ -32,10 +36,14 @@
   --secondary-color: #e3e3e3;
   --text-color: #333;
   --light-bg: #cdcdcd;
-  --menu-light-bg: #ffffff08;
+  --menu-bg-color: #ffffffa3;
   --Navtext-color: #e0e0e0;
   --skils-box-color: #2196F3;
   --pupil-bg: #161d32;
+  --video-before-bg:#ffffffe0;
+  --svg-bg-green: url(src/assets/green.svg) no-repeat;
+  --svg-bg-red: url(src/assets/red.svg) no-repeat;
+  --svg-bg-yellow: url(src/assets/yellow.svg) no-repeat;
 }
 
 body {
@@ -54,20 +62,17 @@ body {
 }
 
 .bg-green {
-  background: url(src/assets/green.svg) no-repeat;
+  background: var(--svg-bg-green);
   background-position: center -200px;
 }
 
 .bg-red {
-  background: url(src/assets/red.svg) no-repeat;
+  background: var(--svg-bg-red);
   background-position: center -200px;
 }
 
 .bg-yellow {
-  background: url(src/assets/yellow.svg) no-repeat;
+  background: var(--svg-bg-yellow);
   background-position: center -200px;
 }
 
-/*Animetion cursor pointer CSS*/
-#cursor {position: fixed; z-index: 999; width: 6px; height: 6px; border-radius: 50%; background-color: red;}
-#cursor-follower {position: fixed; z-index: 999; width: 30px; height: 30px; border: 1px solid #000; border-radius: 50%; background-color: transparent;}
