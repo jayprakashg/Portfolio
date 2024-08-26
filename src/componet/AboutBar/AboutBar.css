@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Satisfy', cursive;
 }
 
 .videoplay {
@@ -16,6 +15,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 .videoplay:before {
     content: '';
     display: inline-block;
@@ -64,6 +64,7 @@
     position: relative;
     z-index: 1;
 }
+
 .about-image:before {
     content: '';
     display: inline-block;

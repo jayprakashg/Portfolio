@@ -4,6 +4,7 @@ import NavBar from './componet/NavBar/NavBar';
 import MiddleBar from './componet/MiddleBar/MiddleBar';
 import CursorCircles from './componet/CursorCircles/CursorCircles';
 import AboutBar from './componet/AboutBar/AboutBar';
+import ProjectBar from './componet/ProjectBar/ProjectBar';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -27,6 +28,7 @@ function App() {
       <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />    
       <AboutBar/>
       <MiddleBar />
+      <ProjectBar/>
     </div>
   );
 }
