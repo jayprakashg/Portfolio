@@ -1,6 +1,8 @@
 .MiddleBar {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .MiddleBar .whatDo {
@@ -50,6 +52,8 @@
 
 .react-container .tab p {
   line-height: 20px;
+  color: var(--text-secondary-color);
+  
 }
 
 .react-container .tab:last-child {

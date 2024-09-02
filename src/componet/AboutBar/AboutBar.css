@@ -17,16 +17,15 @@
 }
 
 .videoplay:before {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: var(--video-before-bg);
-    position: absolute;
+    content: "";
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
-    backdrop-filter: blur(100px);
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.priyaty.com/images/noise.jpg);
+    background-size: cover;
+    opacity: .05;
 }
 
 /*Video Css*/
@@ -167,4 +166,11 @@
 
 .about-text-blog .about-btn ul li a:hover {
     color: var(--text-hover-color);
+}
+
+#ball {
+    position: absolute;
+    width: 6vw;
+    top: 85%;
+    left: -18%;
 }

@@ -6,94 +6,87 @@ import './ProjectBar.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const ProjectBar = () => {
-  const [activeTab, setActiveTab] = useState('tab1');
-
+  
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".main-project",
-        start: "top 0%",
+        trigger: "#project",
+        //markers: true,
+        start: "top 10%",
         end: "top 10%",
-        scrub: 2,
-        pin: true,
-        //markers:true,
+        scrub: 4,
+        pin: true
       }
     });
-    tl
-      .to("#p-top", {
-        top: "-50%"
-      }, 'm')
-      .to("#p-bottom", {
-        bottom: "-50%"
-      }, 'm')
-      .to("#p-top-h", {
-        top: "100%"
-      }, 'm')
-      .to("#p-bottom-h", {
-        bottom: "-100%"
-      }, 'm')
-      .to(".tab-wrapper", {
-        marginTop: "0%"
-      }, 'm');
+
+    tl.to(".text", {
+      top: "-7%",
+    }, 'a')
+      .to("#card-one", {
+        top: "20%",
+      }, 'a')
+      .to("#card-two", {
+        top: "110%"
+      }, 'a')
+      .to("#card-two", {
+        top: "27%"
+      }, 'b')
+      .to("#card-one", {
+        width: "50%",
+        height: "55vh"
+      }, 'b')
+      .to("#card-three", {
+        top: "110%"
+      }, 'b')
+      .to("#card-three", {
+        top: "35%"
+      }, 'c')
+      .to("#card-two", {
+        width: "55%",
+        height: "55vh"
+      }, 'c');
+
   }, []);
 
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
-  };
-
   return (
-    <div className="main-project">
-      <div className="p-head" id="p-top">
-        <h1 id="p-top-h">Project</h1>
+    <div id="project">
+      <div className="text">
+        <div className="text-img">
+            <svg width="68" height="68" viewBox="0 0 883 872" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M221 433.894L223.146 217L442 219.106V436L221 433.894Z" fill="var(--logo-sc)"/>
+                <path d="M874 0H439L440 218.5H654L658 411C652 474 648.5 537.5 577.5 598.5C520.5 652 430 668 361 637C305.8 612.2 274.333 578 265.5 564C255.5 554.4 241.333 525.667 235.5 512C221.5 466.5 222.5 450 221.5 435H1.00001C6.31809e-06 442 4.00001 491.5 15.5 540.5C29.5 610.5 98.5 729.5 191.5 791C284.5 852.5 343.5 876 465 870.5C586.5 865 667.5 815.5 731.5 757.5C795.5 699.5 844.5 598.5 849 572C884 477.5 882.5 369 883 369C883 302.2 878.333 159.167 876 96L874 0Z" fill="var(--logo-j)"/>
+              </svg>
+        </div>
+        <h1>My Project</h1>
+        <p>An independent designer's site reflecting five years of work, life,</p>
+        <p>and play—built on the belief that we are more than just our last projects,</p>
+        <p>blending global work, balance, and the arts.</p>
       </div>
-      <div id="p-center">
-        <div className="tab-wrapper">
-          <div className="tabs">
-            <div
-              className={`tab-button ${activeTab === 'tab1' ? 'active' : ''}`}
-              data-tab="tab1"
-              onClick={() => handleTabClick('tab1')}
-            >
-              <a href="javascript:void(0)">
-                <i className="fa fa-window-maximize" aria-hidden="true"></i> Landing Pages
-              </a>
-            </div>
-            <div
-              className={`tab-button ${activeTab === 'tab2' ? 'active' : ''}`}
-              data-tab="tab2"
-              onClick={() => handleTabClick('tab2')}
-            >
-              <a href="javascript:void(0)">
-                <i className="fa fa-bars" aria-hidden="true"></i> Responsive Navigation Menu
-              </a>
-            </div>
-            <div
-              className={`tab-button ${activeTab === 'tab3' ? 'active' : ''}`}
-              data-tab="tab3"
-              onClick={() => handleTabClick('tab3')}
-            >
-              <a href="javascript:void(0)">
-                <i className="fa fa-ring" aria-hidden="true"></i> Other
-              </a>
-            </div>
-          </div>
-
-          <div className={`tab-content ${activeTab === 'tab1' ? 'active' : ''}`} id="tab1">
-            <h2>Tab 1 Content</h2>
-            <p>This is the content for Tab 1.</p>
-          </div>
-          <div className={`tab-content ${activeTab === 'tab2' ? 'active' : ''}`} id="tab2">
-            <h2>Tab 2 Content</h2>
-            <p>This is the content for Tab 2.</p>
-          </div>
-          <div className={`tab-content ${activeTab === 'tab3' ? 'active' : ''}`} id="tab3">
-            <h2>Tab 3 Content</h2>
-            <p>This is the content for Tab 3.</p>
-          </div>
+      <div className="cards" id="card-one">
+        <img src="src/assets/corporate.jpg" alt="Corporate Website" />
+        <div className="content-text-box">
+          <span className="website-tag">Corporate Website</span>
+          <h4 className="vale-sorce">
+            <span>Qalander Nasseri</span>
+          </h4>
         </div>
       </div>
-      <div className="p-head" id="p-bottom">
-        <h1 id="p-bottom-h">Project</h1>
+      <div className="cards" id="card-two">
+        <div className="content-text-box">
+          <span className="website-tag">E-commerce website</span>
+          <h4 className="vale-sorce">
+            <span>Go 4 Ethnic</span>
+          </h4>
+        </div>
+      </div>
+      <div className="cards" id="card-three">
+        <img src="src/assets/marketing.jpg" alt="Marketing Website" />
+        <div className="content-text-box">
+          <span className="website-tag">Marketing website</span>
+          <h4 className="vale-sorce">
+            <span>GNM Interior</span>
+          </h4>
+        </div>
       </div>
     </div>
   );

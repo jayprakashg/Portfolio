@@ -5,6 +5,7 @@ import MiddleBar from './componet/MiddleBar/MiddleBar';
 import CursorCircles from './componet/CursorCircles/CursorCircles';
 import AboutBar from './componet/AboutBar/AboutBar';
 import ProjectBar from './componet/ProjectBar/ProjectBar';
+import ContactBar from './componet/ContactBar/ContactBar'
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <AboutBar/>
       <MiddleBar />
       <ProjectBar/>
+      <ContactBar/>
     </div>
   );
 }

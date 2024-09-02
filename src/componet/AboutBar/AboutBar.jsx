@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import smokeVideo from '../../assets/smoke.mp4';
 import "./AboutBar.css";
 
 function AboutBar() {
@@ -33,8 +32,8 @@ function AboutBar() {
                             <div className="about-btn">
                                 <a className="myResumes" target="_blank" href="https://marketplace.canva.com/EAFk2sEzxO8/2/0/1131w/canva-dZr9WsdAK8c.jpg">Download Resumes</a>
                                 <ul>
-                                    <li><a href=""><i className="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i className="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#!"><i className="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#!"><i className="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="https://www.behance.net/jayprakashgupta/"><i className="fa-brands fa-behance"></i></a></li>
                                     <li><a href="https://github.com/jayprakashg"><i className="fa-brands fa-github"></i></a></li>
                                 </ul>
@@ -42,6 +41,7 @@ function AboutBar() {
                         </div>
                         <div className="about-image">
                             <img src="src/assets/other.png" alt="" />
+                            <img id="ball" src="src/assets/doodle3.svg" alt="ball"/>
                         </div>
                     </div>
                 </div>

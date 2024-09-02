@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.contactwrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactform {
+  width: 60%;
+}
+.contactwrapper h1 {
+  color: var(--text-color);
+  padding: 80px 0;
+}
+.contactform .input {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid var(--light-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+.contactform .input:focus-visible, .contactform .input:focus, .contactform .textarea:focus, .contactform .textarea:focus-visible{
+  outline: 1px solid var(--text-hover-color);
+  border: none;
+  transition: 0.5s cubic-bezier(0.99, 1.56, 0.64, 1);
+}
+
+.contactform .input::placeholder, .contactform .textarea::placeholder {
+  color: var(--text-secondary-color);
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  height: 180px;
+  border: 1px solid var(--light-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.submit {
+  border: none;
+  color: var(--white-color);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-family: inherit;
+  letter-spacing: 2.5px;
+  background-color: var(--pupil-bg);
+}
+
+.formblog {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.formleft {
+  display: flex;
+  align-items: self-start;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 50%;
+}
+.formbox {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.formleft .no-wrap {
+  flex-wrap: nowrap;
+  width: 48%;
+  margin-right: 13px;
+}
+.formleft .removemargin {
+  margin-right: 0;
+}
+
+.formmessage {
+  text-align: right;
+  width: 50%;;
+}
+
+.textlabel {
+  display: block;
+  font-family: 'Noto Sans Gurmukhi';
+  font-size: 14px;
+  color: var(--text-color);
+  padding-bottom: 5px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.copyright-warpper {
+  width: 100%;
+  padding:8px 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--pupil-bg);
+}
+.copyright {
+  color: var(--white-color);
+  font-size: 14px;
+  font-family: 'Noto Sans Gurmukhi';
+}
+.copyright-warpper .formblog {align-items: center;}
+.socialmidea a {width:34px; height:34px; border-radius: 50%; line-height: 34px; color: var(--white-color); border: 1px solid var(--white-color); display: inline-block; margin: 0 5px;}
+.socialmidea a:hover {border: 1px solid var(--text-hover-color); color: var(--text-hover-color);}
+.privacy-terms a {color: var(--white-color);font-family: 'Noto Sans Gurmukhi'; text-decoration: none;}
+.privacy-terms .privacy-policy {margin-right: 10px;}
