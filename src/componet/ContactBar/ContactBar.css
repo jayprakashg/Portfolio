@@ -13,13 +13,16 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .contactform {
   width: 60%;
 }
+
 .contactwrapper h1 {
   color: var(--text-color);
   padding: 80px 0;
 }
+
 .contactform .input {
   width: 100%;
   padding: 10px;
@@ -28,13 +31,18 @@
   color: var(--text-color);
   border-radius: 5px;
 }
-.contactform .input:focus-visible, .contactform .input:focus, .contactform .textarea:focus, .contactform .textarea:focus-visible{
+
+.contactform .input:focus-visible,
+.contactform .input:focus,
+.contactform .textarea:focus,
+.contactform .textarea:focus-visible {
   outline: 1px solid var(--text-hover-color);
   border: none;
   transition: 0.5s cubic-bezier(0.99, 1.56, 0.64, 1);
 }
 
-.contactform .input::placeholder, .contactform .textarea::placeholder {
+.contactform .input::placeholder,
+.contactform .textarea::placeholder {
   color: var(--text-secondary-color);
 }
 
@@ -73,22 +81,26 @@
   text-align: left;
   width: 50%;
 }
+
 .formbox {
   width: 100%;
   padding-bottom: 15px;
 }
+
 .formleft .no-wrap {
   flex-wrap: nowrap;
   width: 48%;
   margin-right: 13px;
 }
+
 .formleft .removemargin {
   margin-right: 0;
 }
 
 .formmessage {
   text-align: right;
-  width: 50%;;
+  width: 50%;
+  ;
 }
 
 .textlabel {
@@ -100,21 +112,152 @@
   text-align: left;
   letter-spacing: 1px;
 }
+
 .copyright-warpper {
   width: 100%;
-  padding:8px 15px;
+  padding: 8px 15px;
   position: absolute;
   left: 0;
   bottom: 0;
   background-color: var(--pupil-bg);
 }
+
 .copyright {
   color: var(--white-color);
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Noto Sans Gurmukhi';
 }
-.copyright-warpper .formblog {align-items: center;}
-.socialmidea a {width:34px; height:34px; border-radius: 50%; line-height: 34px; color: var(--white-color); border: 1px solid var(--white-color); display: inline-block; margin: 0 5px;}
-.socialmidea a:hover {border: 1px solid var(--text-hover-color); color: var(--text-hover-color);}
-.privacy-terms a {color: var(--white-color);font-family: 'Noto Sans Gurmukhi'; text-decoration: none;}
-.privacy-terms .privacy-policy {margin-right: 10px;}
+
+.copyright-warpper .formblog {
+  align-items: center;
+}
+
+.socialmidea a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 34px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.socialmidea a:hover {
+  border: 1px solid var(--text-hover-color);
+  color: var(--text-hover-color);
+}
+
+.privacy-terms a {
+  color: var(--white-color);
+  font-family: 'Noto Sans Gurmukhi';
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.privacy-terms .privacy-policy {
+  margin-right: 10px;
+}
+
+.alert-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-content {
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+  box-shadow: var(--box-shadow-1);
+}
+
+.alert-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.close-alert {
+  padding: 10px 20px;
+  background-color: var(--pupil-bg);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-alert:hover {
+  background: var(--text-hover-color);
+}
+
+.successfully {
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000047;
+  z-index: 9;
+}
+
+.loader-ani {
+  height: 15px;
+  aspect-ratio: 6;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%; );
+}
+
+.loader-ani:before,
+.loader-ani:after {
+  content: "";
+  flex: 1;
+  padding-left: calc(100%/6);
+  background: radial-gradient(closest-side at calc(100%/3) 50%, #000 90%, #0000) 0/75% 100% content-box;
+  animation: aniy 2s infinite;
+}
+
+.loader-ani:after {
+  --_s: -1;
+}
+
+@keyframes aniy {
+  0% {
+    transform: scale(var(--_s, 1)) translate(0) rotate(0)
+  }
+
+  25% {
+    transform: scale(var(--_s, 1)) translate(-25%) rotate(0)
+  }
+
+  50% {
+    transform: scale(var(--_s, 1)) translate(-25%) rotate(1turn)
+  }
+
+  75%,
+  100% {
+    transform: scale(var(--_s, 1)) translate(0) rotate(1turn)
+  }
+}
