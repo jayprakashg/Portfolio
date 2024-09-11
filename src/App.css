@@ -81,4 +81,14 @@ body {
   background: var(--svg-bg-yellow);
   background-position: center -200px;
 }
-
+.App:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(src/assets/noise.jpg);
+  background-size: cover;
+  opacity: .05;
+}

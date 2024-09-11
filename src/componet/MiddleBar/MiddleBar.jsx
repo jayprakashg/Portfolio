@@ -107,7 +107,7 @@ const MiddleBar = () => {
 
     return (
         <section className="MiddleBar">
-            <div className="maxWitdh padOverall boxSizing bg-green">
+            <div className="maxWidth padOverall boxSizing bg-green">
                 <div className="text-Align">
                     <h1 className="whatDo padBottom">What I Do</h1>
                     <p className="skilled padBottom">I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. I am proficient in HTML, CSS, and JavaScript, as well as design software such as Adobe Photoshop and Illustrator also use canva.</p>
@@ -130,7 +130,7 @@ const MiddleBar = () => {
                 </div>
             </div>
             <div className="skills-blog">
-                <div className="jp-home-integration maxWitdh bg-red">
+                <div className="jp-home-integration maxWidth bg-red">
                     <div className="content-wrap bottom-animated animated middle-animated">
                         <div className="zp-integ-content">
                             <h1>FRONT END DEVELOPER <br /> Skills</h1>

@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: "Bebas Neue", sans-serif
+	font-family: "Bebas Neue", sans-serif;
+	scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -45,7 +46,7 @@ table {
 }
 
 
-.maxWitdh {max-width: 1180px; margin: auto;}
+.maxWidth {max-width: 1180px; margin: auto;}
 h1 {font-size: 40px;}
 h2 {font-size: 25px;}
 h3 {font-size: 14px;}

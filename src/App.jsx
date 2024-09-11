@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import NavBar from './componet/NavBar/NavBar';
 import MiddleBar from './componet/MiddleBar/MiddleBar';
-import CursorCircles from './componet/CursorCircles/CursorCircles';
 import AboutBar from './componet/AboutBar/AboutBar';
-import ProjectBar from './componet/ProjectBar/ProjectBar';
-import ContactBar from './componet/ContactBar/ContactBar'
+import MyprojectBar from './componet/MyprojectBar/MyprojectBar';
+import ContactBar from './componet/ContactBar/ContactBar';
+import CustomCursor from './componet/CustomCursor/CustomCursor';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -25,11 +25,11 @@ function App() {
 
   return (
     <div className="App">
-      <CursorCircles/>
+      <CustomCursor/>
       <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />    
       <AboutBar/>
       <MiddleBar />
-      <ProjectBar/>
+      <MyprojectBar/>
       <ContactBar/>
     </div>
   );

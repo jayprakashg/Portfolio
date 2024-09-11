@@ -21,7 +21,7 @@ function AboutBar() {
     return(
         <section className="videoplay">
             <div className="AboutBar">
-                <div className="maxWitdh padOverall boxSizing">
+                <div className="maxWidth padOverall boxSizing">
                     <div className="about-contener bg-green padTop">
                         <div className="about-text-blog">
                             <h2>Hello, I'm</h2>

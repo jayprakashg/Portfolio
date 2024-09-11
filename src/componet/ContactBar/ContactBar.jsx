@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './ContactBar.css';
 
 const ContactForm = () => {
+  const date = new Date(); // Current date
+  const year = date.getFullYear(); // Extracts the year
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -152,7 +155,7 @@ const ContactForm = () => {
         <div className="maxWidth">
           <div className="formblog">
             <div className="copyright">
-              Copyright © Your Website <span id="yeartext">2024</span>
+              Copyright © Your Website <span id="yeartext">{year}</span>
             </div>
             <div className="socialmidea">
               <a href="#!"><i className="fa-brands fa-facebook-f"></i></a>

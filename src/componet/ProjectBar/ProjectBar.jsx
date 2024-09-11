@@ -8,87 +8,64 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectBar = () => {
   
   useEffect(() => {
-    const tl = gsap.timeline({
+     let tl1 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#project",
-        //markers: true,
-        start: "top 10%",
-        end: "top 10%",
-        scrub: 4,
-        pin: true
+        triggre: ".two",
+        start: "90% 10%",
+        end: "200% 50%",
+        pin:true,
+        scrub:true,
+        //markers:true
       }
     });
 
-    tl.to(".text", {
-      top: "-7%",
-    }, 'a')
-      .to("#card-one", {
-        top: "20%",
-      }, 'a')
-      .to("#card-two", {
-        top: "110%"
-      }, 'a')
-      .to("#card-two", {
-        top: "27%"
-      }, 'b')
-      .to("#card-one", {
-        width: "50%",
-        height: "55vh"
-      }, 'b')
-      .to("#card-three", {
-        top: "110%"
-      }, 'b')
-      .to("#card-three", {
-        top: "35%"
-      }, 'c')
-      .to("#card-two", {
-        width: "55%",
-        height: "55vh"
-      }, 'c');
+    tl1.to(".img1",{
+      top:"-120%",
+    }, "same")
+    tl1.to(".two h5",{
+      marginBttom:"0%",
+    }, "same")
+    tl1.to(".img2",{
+      top:"-20%"
+    }, "same")
+    tl1.to(".img4",{
+      top:"-100%"
+    }, "same")
+    tl1.to(".img5",{
+      top:"-10%"
+    }, "same")
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        triggre: ".three",
+        start: "150% 30%",
+        end: "100% 50%",
+        markers:true,
+        scrub:true
+      }
+    });
+    tl2.to(".img3",{
+      top:"50%"
+    }, "s2")
+    tl2.to(".img6",{
+      top:"67%",
+    }, "s2")
 
   }, []);
 
   return (
-    <div id="project">
-      <div className="text">
-        <div className="text-img">
-            <svg width="68" height="68" viewBox="0 0 883 872" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M221 433.894L223.146 217L442 219.106V436L221 433.894Z" fill="var(--logo-sc)"/>
-                <path d="M874 0H439L440 218.5H654L658 411C652 474 648.5 537.5 577.5 598.5C520.5 652 430 668 361 637C305.8 612.2 274.333 578 265.5 564C255.5 554.4 241.333 525.667 235.5 512C221.5 466.5 222.5 450 221.5 435H1.00001C6.31809e-06 442 4.00001 491.5 15.5 540.5C29.5 610.5 98.5 729.5 191.5 791C284.5 852.5 343.5 876 465 870.5C586.5 865 667.5 815.5 731.5 757.5C795.5 699.5 844.5 598.5 849 572C884 477.5 882.5 369 883 369C883 302.2 878.333 159.167 876 96L874 0Z" fill="var(--logo-j)"/>
-              </svg>
-        </div>
-        <h1>My Project</h1>
-        <p>An independent designer's site reflecting five years of work, life,</p>
-        <p>and play—built on the belief that we are more than just our last projects,</p>
-        <p>blending global work, balance, and the arts.</p>
-      </div>
-      <div className="cards" id="card-one">
-        <img src="src/assets/corporate.jpg" alt="Corporate Website" />
-        <div className="content-text-box">
-          <span className="website-tag">Corporate Website</span>
-          <h4 className="vale-sorce">
-            <span>Qalander Nasseri</span>
-          </h4>
-        </div>
-      </div>
-      <div className="cards" id="card-two">
-        <div className="content-text-box">
-          <span className="website-tag">E-commerce website</span>
-          <h4 className="vale-sorce">
-            <span>Go 4 Ethnic</span>
-          </h4>
-        </div>
-      </div>
-      <div className="cards" id="card-three">
-        <img src="src/assets/marketing.jpg" alt="Marketing Website" />
-        <div className="content-text-box">
-          <span className="website-tag">Marketing website</span>
-          <h4 className="vale-sorce">
-            <span>GNM Interior</span>
-          </h4>
-        </div>
-      </div>
+    <div id="main">
+    <div class="two">
+      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h3>
+      <h1>From 2015 With Passion</h1>
+      <h5>desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
+      <div class="img img1"></div>
+      <div class="img img2"></div>
+      <div class="img img3"></div>
+      <div class="img img4"></div>
+      <div class="img img5"></div>
+      <div class="img img6"></div>
     </div>
+ </div>
   );
 };
 
