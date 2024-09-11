@@ -42,7 +42,7 @@ const Myprojects = () => {
                 trigger: ".project-three ",
                 start: "70% 50%",
                 end: "150% 50%",
-                markers: true,
+                //markers: true,
                 scrub: true
             }
         });
