@@ -4,8 +4,8 @@ import NavBar from './componet/NavBar/NavBar';
 import MiddleBar from './componet/MiddleBar/MiddleBar';
 import AboutBar from './componet/AboutBar/AboutBar';
 import MyprojectBar from './componet/MyprojectBar/MyprojectBar';
-import ContactBar from './componet/ContactBar/ContactBar';
 import CustomCursor from './componet/CustomCursor/CustomCursor';
+import CustomConBar from './componet/CustomConBar/CustomConBar';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -30,7 +30,7 @@ function App() {
       <AboutBar/>
       <MiddleBar />
       <MyprojectBar/>
-      <ContactBar/>
+      <CustomConBar/>
     </div>
   );
 }

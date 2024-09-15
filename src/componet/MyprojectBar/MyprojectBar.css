@@ -126,7 +126,7 @@ img {max-width: 100%;}
    }
    .project-two h1 {
     width: 25%;
-    font-size: 2.5vw;
+    font-size: 4vw;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
@@ -135,7 +135,7 @@ img {max-width: 100%;}
     width: 25%;
     font-size: 1.2vw;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 10vh;
     font-weight: 400;
     margin-bottom: -20%;
    }

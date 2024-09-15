@@ -25,7 +25,7 @@ function AboutBar() {
                     <div className="about-contener bg-green padTop">
                         <div className="about-text-blog">
                             <h2>Hello, I'm</h2>
-                            <h1><span>J</span>onson</h1>
+                            <h1><span>J</span>ayprakash Gupta</h1>
                             <p className="about-text-me">A <span className="creative-designer">Creative Designer</span> From <span className="country">India</span></p>
                             <p className="about-txet-work">I'm creative designer based in india, and i'm very <br></br> passionate and dedicated to my work.</p>
 

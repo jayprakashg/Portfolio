@@ -24,9 +24,9 @@ const Myprojects = () => {
         .to(".img1", {
             top: "-120%",
         }, "same")
-        .to(".two h5", {
-            marginBottom: "0%",
-        }, "same")
+        // .to(".project-two h5", {
+        //     marginBottom: "0%",
+        // }, "same")
         .to(".img2", {
             top: "-20%",
         }, "same")
@@ -100,13 +100,13 @@ const Myprojects = () => {
                 <div className="project-two">
                     <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h3>
                     <h1>From 2015 With Passion</h1>
-                    <h5>desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
-                    <div className="img img1"></div>
-                    <div className="img img2"></div>
-                    <div className="img img3"></div>
-                    <div className="img img4"></div>
-                    <div className="img img5"></div>
-                    <div className="img img6"></div>
+                    <h5>I love to help reach out and I'll get in touch.</h5>
+                    <div className="img img1"> <img src="src/assets/corporate.jpg" alt="Marketing website" /> </div>
+                    <div className="img img2"> <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="" /> </div>
+                    <div className="img img3"> <img src="https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg" alt="" /></div>
+                    <div className="img img4"> <img src="https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true" alt="" /></div>
+                    <div className="img img5"> <img src="https://th.bing.com/th/id/OIG1.wQ7nqzXG6LLji1s3MrOP" alt="" /></div>
+                    <div className="img img6"> <img src="https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-020.jpg" alt="" /></div>
                 </div>
                 <div className="project-three"></div>
             </div>
