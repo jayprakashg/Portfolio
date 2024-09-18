@@ -6,7 +6,7 @@ import './ContactBar.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactForm = () => {
-  const contactbottomtextRef = useRef(null);
+  //const contactbottomtextRef = useRef(null);
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -22,17 +22,19 @@ const ContactForm = () => {
   const scriptURL =
     'https://script.google.com/macros/s/AKfycbxbtaLiEwPfimHJqahp5n5qh9Dbtv7brWPVtoPfZCn9Jns6paBfMD3J8lF-KI8CFIA/exec';
 
-  useEffect(() => {
-    gsap.from(contactbottomtextRef.current, {
-      scrollTrigger: {
-        trigger: contactbottomtextRef.current,
-        start: 'top bottom',
-        end: 'top center',
-        scrub: true,
-      }
-    });
+  // useEffect(() => {
+  //   var tl1 = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".bgscale",
+  //       scrub: true,
+  //       start: '10% 10%',
+  //       end: 'bottom 50%',
+  //       //markers:true
+  //     },
+  //   });
+  //   //tl1.to(contactbottomtextRef.current, {bottom: '-310px', ease: "power2" });
     
-  }, []);
+  // }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -184,7 +186,9 @@ const ContactForm = () => {
           </div>
         )}
 
-        <div className="contactbottomtext" ref={contactbottomtextRef}>
+
+      </div>        
+      <div className="contactbottomtext">
           <h2 className="h2-bottomtext">
             <a href="/" target="_self" className="an-rich-text">HOME&nbsp;</a> |&nbsp;&nbsp;
             <a href="/about" target="_self" className="an-rich-text">ABOUT</a>&nbsp; |&nbsp; 
@@ -195,7 +199,6 @@ const ContactForm = () => {
             <span className='createdme'>created</span> by Jayprakash Gupta
           </a>
         </div>
-      </div>
     </div>
   );
 };

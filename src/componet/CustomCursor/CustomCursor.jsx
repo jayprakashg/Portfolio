@@ -19,7 +19,7 @@ const CustomCursor = () => {
 
       // Animate cursorDot with a quick, direct movement
       gsap.to(cursorDot, {
-        duration: 0.3, // Quick response
+        duration: 0.01, // Quick response
         x: posX,
         y: posY,
         ease: 'power3.out',
@@ -27,7 +27,7 @@ const CustomCursor = () => {
 
       // Animate cursorOutline with a slight delay for a trailing effect
       gsap.to(cursorOutline, {
-        duration: 0.1, // Slight delay for trailing effect
+        duration: 0.018, // Slight delay for trailing effect
         x: posX,
         y: posY,
         ease: 'power3.out',

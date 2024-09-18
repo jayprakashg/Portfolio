@@ -44,7 +44,7 @@
     }
 
     .bgtrack {
-      height: 350vh;
+      height: 300vh;
     }
 
     .roundshape {
@@ -52,7 +52,7 @@
       justify-content: center;
       align-items: center;
       height: 100%;
-      opacity: 0;
+      /*opacity: 0;*/
     }
 
     .roundshape .img {
@@ -241,4 +241,11 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.bgscale{
+position: absolute;
+bottom: 0px;
+height: 10px;
+width: 100%;
 }

@@ -270,3 +270,9 @@ body {
   color:var(--logo-j);
   font-weight: 600;
 }
+.contactbottomtext {    
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -510px;
+}
