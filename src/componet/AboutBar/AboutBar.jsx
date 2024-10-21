@@ -40,8 +40,8 @@ function AboutBar() {
                             </div>
                         </div>
                         <div className="about-image">
-                            <img src="src/assets/me.png" alt="" />
-                            <img id="ball" src="src/assets/doodle3.svg" alt="ball"/>
+                            <img src="public/img/me.png" alt="" />
+                            <img id="ball" src="public/img/doodle3.svg" alt="ball"/>
                         </div>
                     </div>
                 </div>

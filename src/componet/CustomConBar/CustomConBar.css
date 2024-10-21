@@ -13,7 +13,7 @@
 
     .overlay {
       position: sticky;
-      height: 100vh;
+      height: 120vh;
       top: 0;
       overflow: hidden;
     }
@@ -156,7 +156,7 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    background: #fff;
+    background: #d7d7d7;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

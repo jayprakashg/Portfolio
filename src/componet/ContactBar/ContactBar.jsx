@@ -170,7 +170,7 @@ const ContactForm = () => {
 
         {isAlertVisible && (
           <div className="alert-popup">
-            <img className="successfully" src="src/assets/successfully.gif" alt="Success" />
+            <img className="successfully" src="public/img/successfully.gif" alt="Success" />
             <div className="alert-content">
               <p>Thank you! Your form has been submitted successfully.</p>
               <button onClick={closeAlert} className="close-alert">

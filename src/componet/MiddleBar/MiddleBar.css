@@ -146,7 +146,7 @@
   right: 0;
   width: 48px;
   height: 48px;
-  background: url(src/assets/skills-spirit.png) no-repeat left top;
+  background: url(public/img/skills-spirit.png) no-repeat left top;
   background-size: 530px auto;
   margin: auto;
 }

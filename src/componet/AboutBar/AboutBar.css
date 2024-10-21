@@ -55,7 +55,7 @@
 .about-image:before {
     content: '';
     display: inline-block;
-    background: url(src/assets/doodle2.svg) no-repeat;
+    background: url(../../../public/img/doodle2.svg) no-repeat;
     width: 70px;
     height: 70px;
     position: absolute;
@@ -89,7 +89,7 @@
 .about-text-blog h1:before {
     content: '';
     display: inline-block;
-    background: url(src/assets/doodle1.svg) no-repeat;
+    background: url(../../../public/img/doodle1.svg) no-repeat;
     width: 70px;
     height: 70px;
     position: absolute;

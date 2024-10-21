@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Lottie from "react-lottie";
-import animationData from "../../assets/ui-ux-designer.json";
-import animationData2 from "../../assets/website-design.json";
-import animationData3 from "../../assets/app-design.json";
+import animationData from "../../../public/img/ui-ux-designer.json";
+import animationData2 from "../../../public/img/website-design.json";
+import animationData3 from "../../../public/img/app-design.json";
 import "./MiddleBar.css";
 import gsap from "gsap";
 

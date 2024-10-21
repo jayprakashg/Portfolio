@@ -44,7 +44,7 @@ const AnimatedScroll = () => {
     tl2.to(socialaRef.current, {zIndex:0,});
     tl2.to(shapeRef.current, { scale: 30, duration:10, ease: "power2" });
     tl2.to(textRef.current, { opacity: 1, ease: "power2" });
-    tl2.to(".contactbottomtext", {bottom: '-310px', duration:2, ease: "power2" });
+    tl2.to(".contactbottomtext", {bottom: '-280px', duration:2, ease: "power2" });
 
   }, []);
 
@@ -64,7 +64,7 @@ const AnimatedScroll = () => {
         <div className="social-ation" ref={socialaRef}>
           <div className="socialmedia">
             <div className="socialround">
-              <img src="https://www.shutterstock.com/image-photo/passport-photo-portrait-woman-on-260nw-2438031869.jpg" alt="Profile" />
+              <img src="../../public/img/other.png" alt="Profile" />
             </div>
             <ul className="socialmedia-icon">
               <li><i className="fa-brands fa-facebook-f"></i></li>

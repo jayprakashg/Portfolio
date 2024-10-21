@@ -144,11 +144,14 @@ img {max-width: 100%;}
     left: 5%;
     top: 10%;
     width: 15vw;
-    height: 30vh;
+    height: 15vh;
     background-color: #202020;
     border-radius: 20px;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+   }
+   .project-two .img img {
+    border-radius: 20px;
    }
    .project-two .img1 {
     top: 30%;

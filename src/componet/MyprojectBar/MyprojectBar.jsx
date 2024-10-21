@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './MyprojectBar.css';
-import IMG1 from '../../assets/IMG/img1.jpg';
-import IMG2 from '../../assets/IMG/img2.jpg';
-import IMG3 from '../../assets/IMG/img3.jpg';
+import IMG1 from '../../../public/img/img1.jpg';
+import IMG2 from '../../../public/img/img2.jpg';
+import IMG3 from '../../../public/img/img3.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,7 +101,7 @@ const Myprojects = () => {
                     <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</h3>
                     <h1>From 2015 With Passion</h1>
                     <h5>I love to help reach out and I'll get in touch.</h5>
-                    <div className="img img1"> <img src="src/assets/corporate.jpg" alt="Marketing website" /> </div>
+                    <div className="img img1"> <img src="public/img/corporate.jpg" alt="Marketing website" /> </div>
                     <div className="img img2"> <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="" /> </div>
                     <div className="img img3"> <img src="https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg" alt="" /></div>
                     <div className="img img4"> <img src="https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true" alt="" /></div>
