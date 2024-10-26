@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +9,7 @@ body {
 	font-family: "Bebas Neue", sans-serif;
 	scroll-behavior: smooth;
 }
-
-
-.maxWidth {max-width: 1180px; margin: auto;}
+/* .maxWidth {max-width: 1180px; margin: auto;}
 h1 {font-size: 40px;}
 h2 {font-size: 25px;}
 h3 {font-size: 14px;}
@@ -20,5 +19,5 @@ h3 {font-size: 14px;}
 .padRight {padding-right: 50px;}
 .padLeft {padding-left: 50px;}
 .padBottom {padding-bottom: 50px;}
-.padOverall {padding: 50px;;}
+.padOverall {padding: 50px;;} */
 
