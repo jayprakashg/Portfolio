@@ -1,53 +1,10 @@
-.MiddleBar {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.MiddleBar .whatDo {
-  text-align: center;
-}
 
 .MiddleBar .skilled {
   font-family: "Noto Sans Gurmukhi", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0.5px;
-}
-
-.react-container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
 }
 
 .react-container .tabs {
   flex: 0 0 400px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: var(--background-primary-color);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow-4);
-}
-
-.react-container .tab {
-  width: 100%;
-  padding: 10px 0px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid var(--secondary-color);
-  outline: none;
-  font-size: 16px;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-
-.react-container .tab h2 {
-  margin-bottom: 5px;
 }
 
 .react-container .tab p {
@@ -65,57 +22,22 @@
   color: var(--text-hover-color);
 }
 
-.react-container .tab-content {
-  margin-left: 50px;
-  font-size: 18px;
-  color: var(--text-color);
-  width: 100%;
-  background-color: var(--background-primary-color);
-  border-radius: 10px;
-  box-shadow: var(--box-shadow-4);
-}
-
-.react-container .tab-content .animated-svg {
-  width: 550px;
-  margin: 0 auto;
-}
-
 /*Skills Section*/
-.skills-blog {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
 
 .skills-blog .bg-red {
   background-position: center 0px;
 }
 
 .jp-home-integration {
-  position: relative;
   padding: 300px 0;
-  width: 90%;
-  margin: 0px auto 0;
-  color: #fff;
 }
 
-.content-wrap {
-  position: relative;
-  width: 90%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
 
-.zp-integ-content {
+/* .zp-integ-content {
   max-width: 500px;
   text-align: center;
   margin: 0 auto;
-}
-
-.zp-integ-content h1 {
-  color: var(--text-color);
-  line-height: 60px;
-}
+} */
 
 .jp-home-integration ul {
   position: absolute;
@@ -218,15 +140,6 @@
   transform: scale(1.2174);
 }
 
-.jp-home-integration ul li>div {
-  position: relative;
-  height: 92px;
-  width: 92px;
-  background: var(--background-primary-color);
-  margin: 0;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow-4);
-}
 
 .jp-home-integration .prd-name {
   text-indent: -9999px;
@@ -374,32 +287,17 @@
 }
 
 /*Eyes Move to Cursore*/
-.eyes-container {
+/* .eyes-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin-top: 20px;
-}
-
-.eyes-container .eye {
-  width: 80px;
-  height: 80px;
-  background-color: var(--background-primary-color);
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--box-shadow-4);
-}
+} */
 
 .eyes-container .pupil {
   width: 30px;
   height: 30px;
-  background-color: var(--pupil-bg);
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
 }
@@ -474,5 +372,60 @@
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0)
+  }
+}
+
+@media (max-width:767px) {
+  .react-container .tabs {
+    flex:0 0 100%;
+  }
+  /* .jp-integ-zdesk, .jp-integ-msteams, .jp-integ-zcrm {
+    left: 10px;
+  }
+  .jp-integ-sass, .jp-integ-zpeople, .jp-integ-zgit {
+    right:0;
+  }
+  .jp-integ-emudhra {
+    top: -277px;
+  }
+  .jp-integ-redux {
+    top: 393px;
+  } */
+  .jp-home-integration ul {
+    box-sizing: border-box;
+    position: initial;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+    margin-top: 80px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.jp-home-integration ul li {
+  position: initial;
+  margin-bottom: 40%;
+}
+.jp-home-integration {
+  padding: 50px 0;
+}
+.jp-integ-circleleft, .jp-integ-square1, .jp-integ-square2, .jp-integ-square3, .jp-integ-square4, .jp-integ-square5, .jp-integ-square6 {
+  display: none !important;
+}
+}
+@media (max-width:480px) {
+    .jp-home-integration ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:370px) {
+  .jp-home-integration ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .jp-home-integration ul li {
+    position: initial;
+    margin-bottom: 20%;
+  }
+  .jp-home-integration {
+    padding-bottom: 150px;
   }
 }

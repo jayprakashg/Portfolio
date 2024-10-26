@@ -8,25 +8,10 @@ import CustomCursor from './componet/CustomCursor/CustomCursor';
 import CustomConBar from './componet/CustomConBar/CustomConBar';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-
-  useEffect(() => {
-    if (isDarkTheme) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  }, [isDarkTheme]);
-
-
-  const toggleTheme = () => {
-    setIsDarkTheme(prevTheme => !prevTheme);
-  };
-
   return (
     <div className="App">
       <CustomCursor/>
-      <NavBar toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />    
+      <NavBar />    
       <AboutBar/>
       <MiddleBar />
       <MyprojectBar/>
@@ -34,6 +19,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 

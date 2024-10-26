@@ -1,61 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-  width: 100%;
-  box-sizing: border-box;
-  height: auto;
-  text-align: center;
-  position: relative;
-}
-
-.contactwrapper {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.contactwrapper h1 {
-  color: var(--text-color);
-  padding-bottom: 100px;
-}
 
 .contactform .input {
-  width: 100%;
-  padding: 10px;
-  font-size: 12px;
-  border: 1px solid var(--light-bg);
-  color: var(--text-color);
-  border-radius: 5px;
-  font-family: 'Noto Sans Gurmukhi';
+  font-family: "Noto Sans Gurmukhi", sans-serif;
 }
 
 .contactform .input:focus-visible,
 .contactform .input:focus,
 .contactform .textarea:focus,
 .contactform .textarea:focus-visible {
-  outline: 1px solid var(--text-hover-color);
+  outline: 1px solid #2196F3;
   border: none;
   transition: 0.5s cubic-bezier(0.99, 1.56, 0.64, 1);
 }
-
 .contactform .input::placeholder,
 .contactform .textarea::placeholder {
-  color: var(--text-secondary-color);
+  color: #a7a7a7;
+}
+.dark .contactform .input::placeholder,
+.dark .contactform .textarea::placeholder {
+  color: rgb(116 116 116);
 }
 
 .textarea {
@@ -66,143 +28,25 @@ body {
   border: 1px solid var(--light-bg);
   color: var(--text-color);
   border-radius: 5px;
-  font-family: 'Noto Sans Gurmukhi';
+  font-family: "Noto Sans Gurmukhi", sans-serif;
   resize: none;
 }
 
-.submit {
-  border: none;
-  color: var(--white-color);
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 8px 15px;
-  font-family: inherit;
-  letter-spacing: 2.5px;
-  background-color: var(--pupil-bg);
-}
-
-.submit:hover {
-  background-color: var(--text-hover-color);
-}
-
-.formblog {
-  display: flex;
-  align-items: self-start;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.formleft {
-  display: flex;
-  align-items: self-start;
-  flex-wrap: wrap;
-  text-align: left;
-  width: 50%;
-}
-
-.formbox {
-  width: 100%;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.formleft .no-wrap {
-  flex-wrap: nowrap;
-  width: 48%;
-  margin-right: 13px;
-}
-
-.formleft .removemargin {
-  margin-right: 0;
-}
-
-.formmessage {
-  text-align: right;
-  width: 50%;
-  ;
-}
-
 .textlabel {
-  display: block;
-  font-family: 'Noto Sans Gurmukhi';
-  font-size: 14px;
-  color: var(--text-color);
-  padding-bottom: 5px;
-  text-align: left;
-  letter-spacing: 1px;
+  font-family: "Noto Sans Gurmukhi", sans-serif;
 }
-
-/* .contactbottomtext {
-  position: absolute;
-  bottom: -500px;
-} */
-
-.contactbottomtext .h2-bottomtext {
-  font-size: 16px;
-  color: var(--white-color);
-}
-
 .contactbottomtext .h2-bottomtext a {
-  text-decoration: none;
-  font-size: 16px;
-  font-family: 'Noto Sans Gurmukhi';
-  text-transform: uppercase;
-  padding: 0 5px;
+  font-family: "Noto Sans Gurmukhi", sans-serif;
   letter-spacing: 3px;
-  color: var(--white-color);
 }
 
 .contactbottomtext .created-rich-text {
-  font-size: 14px;
-  color: var(--white-color);
-  text-decoration: none;
   font-family: 'Satisfy';
-  letter-spacing: 1px;
 }
 
-
-.alert-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--white-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.alert-content {
-  background: var(--white-color);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
+.alert-content { 
   max-width: 300px;
   width: 80%;
-  box-shadow: var(--box-shadow-1);
-}
-
-.alert-content p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.close-alert {
-  padding: 10px 20px;
-  background-color: var(--pupil-bg);
-  color: var(--white-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.close-alert:hover {
-  background: var(--text-hover-color);
 }
 
 .successfully {
@@ -211,17 +55,6 @@ body {
   z-index: 1;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-
-.loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #00000047;
-  z-index: 9;
 }
 
 .loader-ani {
@@ -239,7 +72,7 @@ body {
   content: "";
   flex: 1;
   padding-left: calc(100%/6);
-  background: radial-gradient(closest-side at calc(100%/3) 50%, #000 90%, #0000) 0/75% 100% content-box;
+  background: radial-gradient(closest-side at calc(100%/3) 50%, #007CDF 90%, #0000) 0/75% 100% content-box;
   animation: aniy 2s infinite;
 }
 
@@ -271,8 +104,21 @@ body {
   font-weight: 600;
 }
 .contactbottomtext {    
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -510px;
+  bottom: -17rem;
+}
+
+
+@media (max-width:767px) {
+  .formmessage .textarea {
+    height: 50px;
+  }  
+  .text-inner .contactbottomtext {
+    bottom: -68px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactbottomtext .h2-bottomtext a {
+    letter-spacing: 0.5px;
+  }
 }

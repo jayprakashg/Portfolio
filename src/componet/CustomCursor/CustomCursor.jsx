@@ -45,8 +45,8 @@ const CustomCursor = () => {
 
   return (
     <>
-      <div className="cursor-dot" ref={cursorDotRef}></div>
-      <div className="cursor-outline" ref={cursorOutlineRef}></div>
+      <div className="cursor-dot fixed top-0 left-0 rounded-full z-[99] pointer-events-none w-2 h-2 bg-black dark:bg-white hidden md:block lg:block" ref={cursorDotRef}></div>
+      <div className="cursor-outline fixed top-0 left-0 rounded-full z-[99] pointer-events-none w-8 h-8 border border-2 border-black dark:border-white hidden md:block lg:block" ref={cursorOutlineRef}></div>
     </>
   );
 };

@@ -1,181 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+.overlay {
+  height: 120vh;
 }
-    body {
-      margin: 0;
-    }
 
-    .overlay {
-      position: sticky;
-      height: 120vh;
-      top: 0;
-      overflow: hidden;
-    }
-    .overlaybbg {background: radial-gradient(at bottom right, #79f1c333 20%, transparent 35%);}
-    .contactform {
-      display: flex;
-      height: 100%;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      flex-direction: column;
-    }
-
-    .text-inner {
-      font-size: 2.5rem;
-      opacity: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-    }
-
-    .bgtrack {
-      height: 300vh;
-    }
-
-    .roundshape {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      /*opacity: 0;*/
-    }
-
-    .roundshape .img {
-      width: 5rem;
-      height: 5rem;
-      position: relative;
-    }
-
-    .roundshape .img svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .roundshape .img .circle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .roundshape .img svg .circle-path {
-      fill: #b5b6ff;
-      stroke: #b5b6ff;
-      stroke-width: 5;
-    }
-    /*----------text------------*/
-    .text-group {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-        margin-top: 5%;
-    }
-    .peace, .no-matter {
-    font-size: 5vw;
-    color: #202020;
-    text-align: center;
-    text-transform: capitalize;
-    transition: all .6s ease;
+.overlaybbg {
+  background: radial-gradient(at bottom right, #267bdd7a 20%, transparent 35%);
 }
+.dark .overlaybbg {
+  background: radial-gradient(at bottom right, #10417a7a 20%, transparent 35%);
+}
+
+.bgtrack {
+  height: 300vh;
+}
+
+.roundshape .img {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+}
+
+.roundshape .img svg .circle-path {
+  fill: #b5b6ff;
+  stroke: #b5b6ff;
+  stroke-width: 5;
+}
+
+.dark .roundshape .img svg .circle-path {
+  fill: #020617;
+  stroke: #020617;
+}
+
+
 
 .no-matter {
-    position: relative;
-    width: 50%;
-    height: 90px;
-    margin: 0 auto;
+  height: 65px;
 }
 
 .scro-matter {
-    position: absolute;
-    color: #202020;
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .scro-matter h1 {
-    font-size: 5vw;
+  font-size: 5vw;
 }
 
 .coloreffect {
-    opacity: 1;
+  opacity: 1;
 }
 
 .coloreffect h1 {
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .peace .peace-text {
-    display: block;
-    color: #9294ed;
-}
-
-    /*--------Social---------*/
-
-.social-ation {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.socialmedia {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: block;
+  color: #9294ed;
 }
 
 .socialround {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    background: #d7d7d7;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 200px;
+  height: 200px;
 }
 
 .socialmedia-icon {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-      animation-name: r;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation-name: r;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-    list-style: none;
+  list-style: none;
 }
 
 .socialmedia-icon li {
-    position: absolute;
+  position: absolute;
   animation-name: r1;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
@@ -183,43 +87,43 @@
 }
 
 .socialmedia-icon li:nth-child(1) {
-    left: 30px;
-    top: 20px;
+  left: 30px;
+  top: 20px;
 }
 
 .socialmedia-icon li:nth-child(2) {
-    right: 112px;
-    top: -15px;
+  right: 112px;
+  top: -15px;
 }
 
 .socialmedia-icon li:nth-child(3) {
-    right: 14px;
-    top: 28px;
+  right: 14px;
+  top: 28px;
 }
 
 .socialmedia-icon li:nth-child(4) {
-    left: -10px;
-    top: 115px;
+  left: -10px;
+  top: 115px;
 }
 
 .socialmedia-icon li:nth-child(5) {
-    right: -13px;
-    top: 115px;
+  right: -13px;
+  top: 115px;
 }
 
 .socialmedia-icon li:nth-child(6) {
-    right: 29px;
-    top: 213px;
+  right: 29px;
+  top: 213px;
 }
 
 .socialmedia-icon li:nth-child(7) {
-    left: 20px;
-    top: 206px;
+  left: 20px;
+  top: 206px;
 }
 
 .socialmedia-icon li:nth-child(8) {
-    right: 118px;
-    top: 249px;
+  right: 118px;
+  top: 249px;
 }
 
 
@@ -243,9 +147,8 @@
   }
 }
 
-.bgscale{
-position: absolute;
-bottom: 0px;
-height: 10px;
-width: 100%;
+@media (max-width:480px) {
+  .scro-matter h1 {
+    font-size: 8vw;
+  }
 }

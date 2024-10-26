@@ -1,41 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.videoplay {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-/*Video Css*/
-
-
-.AboutBar {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    z-index: 1;
-}
-
 .about-contener {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-position: left -34px;
-    position: relative;
+    background-position: left -18px;
 }
-
 .about-contener:before {
     content: '';
     display: inline-block;
@@ -46,12 +12,10 @@
     bottom: -153px;
     right: -79px;
 }
-
 .about-image {
     position: relative;
     z-index: 1;
 }
-
 .about-image:before {
     content: '';
     display: inline-block;
@@ -63,102 +27,63 @@
     top: 0;
     background-size: 75px;
 }
-
-.about-image img {
-    width: 400px;
-}
-
-.about-text-blog h2 {
-    color: var(--text-hover-color);
-    margin-bottom: 15px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    padding-left: 20px;
-}
-
-.about-text-blog h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: var(--text-color);
-    position: relative;
-    /*mix-blend-mode: overlay;*/
-}
-
-.about-text-blog h1:before {
-    content: '';
-    display: inline-block;
-    background: url(../../../public/img/doodle1.svg) no-repeat;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left: -56px;
-    top: -52px;
-    background-size: 67px;
-}
-
-.about-text-blog h1 span {
-    font-size: 70px;
-}
-
 .about-text-blog .about-text-me {
     font-family: 'Satisfy';
-    font-size: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-    color: var(--text-color);
 }
-
 .about-text-blog .about-text-me .creative-designer {
     color: #21bc61;
+    font-family: 'Satisfy';
 }
 
 .about-text-blog .about-text-me .country {
     color: #826ce7;
+    font-family: 'Satisfy';
 }
 
 .about-text-blog .about-txet-work {
-    font-size: 18px;
-    font-family: 'Noto Sans Gurmukhi';
-    margin-bottom: 30px;
-    line-height: 26px;
-    color: var(--text-color);
+    font-family: "Noto Sans", sans-serif;
 }
-
-.about-text-blog .about-btn,
-.about-text-blog .about-btn ul {
-    display: flex;
-    align-items: center;
-}
-
-.about-text-blog .about-btn .myResumes {
-    padding: 15px 25px;
-    background-color: var(--pupil-bg);
-    margin-right: 10px;
-    border-radius: 10px;
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-}
-
-.about-text-blog .about-btn ul li {
-    padding: 10px;
-}
-
-.about-text-blog .about-btn ul li a {
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-.about-text-blog .about-btn ul li a:hover {
-    color: var(--text-hover-color);
-}
-
 #ball {
-    position: absolute;
     width: 6vw;
     top: 85%;
     left: -18%;
+}
+.about-text-blog h1:before {
+    content: "";
+    display: inline-block;
+    background: url("/img/doodle1.svg") no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: -50px;
+    top: -68px;
+    background-size: 67px;
+}
+@media (max-width:767px) {
+    .aboutwrap {
+        height: 170vh;
+    }
+    .about-image:before {
+        right: 0;
+    } 
+    #ball {
+        width: 10vw;
+        left: 0;
+    }
+    .about-contener:before, .about-text-blog h1:before {
+        display: none;
+    }
+}
+@media (max-width:480px) {
+    #ball {
+        width: 15vw;
+    }
+    .aboutwrap {
+        height: 140vh;
+    }
+}
+@media (max-width:367px) {
+    #ball {
+        width: 20vw;
+    }
 }
